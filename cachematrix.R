@@ -25,3 +25,9 @@ cacheSolve <- function(x) {
     x$setInverse(inv)
     inv
 }
+
+#Example
+x <- matrix(c(1,2,5,7),2,2)
+y <- makeCacheMatrix(x)
+xInverse <-  cacheSolve(y)
+xInverse
